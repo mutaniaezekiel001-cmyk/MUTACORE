@@ -1,0 +1,3483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC SEO
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Web Design & Development | Mutacore Visuals
+    </title>
+
+    <meta name="description"
+        content="Mutacore Visuals creates modern, responsive and professional websites for businesses, brands and individuals. Explore our web design and development services.">
+
+    <meta name="keywords"
+        content="web design Kenya, website development Kenya, responsive web design, business websites, Mutacore Visuals, website developer Kenya, professional websites">
+
+    <meta name="author"
+        content="Mutacore Visuals">
+
+    <meta name="robots"
+        content="index, follow">
+
+    <meta name="theme-color"
+        content="#283F24">
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:title"
+        content="Web Design & Development | Mutacore Visuals">
+
+    <meta property="og:description"
+        content="Modern websites designed to make your business look professional, build trust and grow online.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:site_name"
+        content="Mutacore Visuals">
+
+
+    <!-- =====================================================
+         CANONICAL URL
+    ====================================================== -->
+
+    <!-- Replace with your actual domain -->
+
+    <link rel="canonical"
+        href="https://www.mutacorevisuals.com/webdesign.html">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         AEO / STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+
+        "@type": "WebDesign",
+
+        "name": "Mutacore Visuals Web Design Services",
+
+        "description": "Professional website design and development services for businesses, brands and individuals.",
+
+        "provider": {
+            "@type": "Organization",
+            "name": "Mutacore Visuals"
+        },
+
+        "areaServed": "Kenya",
+
+        "serviceType": [
+            "Website Design",
+            "Website Development",
+            "Responsive Web Design",
+            "Business Website Design",
+            "Portfolio Website Design",
+            "Landing Page Design"
+        ]
+
+    }
+
+    </script>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           BRAND COLORS
+        ====================================================== */
+
+        :root {
+
+            --gold: #FFBF00;
+
+            --cream: #FFF78D;
+
+            --green: #467235;
+
+            --dark-green: #283F24;
+
+            --white: #ffffff;
+
+            --light: #f6f7f2;
+
+            --gray: #687067;
+
+            --border:
+                rgba(40,63,36,0.12);
+
+            --shadow:
+                0 20px 60px
+                rgba(40,63,36,0.15);
+
+        }
+
+
+        /* =====================================================
+           RESET
+        ====================================================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family:
+                "Inter",
+                sans-serif;
+
+            background:
+                var(--light);
+
+            color:
+                var(--dark-green);
+
+            line-height:
+                1.6;
+
+            overflow-x:
+                hidden;
+
+        }
+
+
+        a {
+
+            text-decoration:
+                none;
+
+            color:
+                inherit;
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ====================================================== */
+
+        .navbar {
+
+            position:
+                fixed;
+
+            top:
+                0;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            z-index:
+                1000;
+
+            background:
+                rgba(40,63,36,0.95);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.08);
+
+        }
+
+
+        .nav-container {
+
+            max-width:
+                1250px;
+
+            margin:
+                auto;
+
+            padding:
+                14px 25px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+        }
+
+
+        .logo {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+
+            color:
+                white;
+
+            font-weight:
+                900;
+
+        }
+
+
+        .logo-symbol {
+
+            width:
+                44px;
+
+            height:
+                44px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            background:
+                var(--gold);
+
+            color:
+                var(--dark-green);
+
+            border-radius:
+                11px;
+
+            font-size:
+                1.25rem;
+
+            transform:
+                rotate(-5deg);
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .logo:hover .logo-symbol {
+
+            transform:
+                rotate(5deg)
+                scale(1.08);
+
+        }
+
+
+        .nav-links {
+
+            display:
+                flex;
+
+            gap:
+                24px;
+
+            align-items:
+                center;
+
+            list-style:
+                none;
+
+        }
+
+
+        .nav-links a {
+
+            color:
+                rgba(255,255,255,0.82);
+
+            font-size:
+                0.86rem;
+
+            font-weight:
+                600;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .nav-contact {
+
+            background:
+                var(--gold);
+
+            color:
+                var(--dark-green) !important;
+
+            padding:
+                10px 18px;
+
+            border-radius:
+                30px;
+
+            font-weight:
+                800 !important;
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero {
+
+            min-height:
+                100vh;
+
+            padding-top:
+                100px;
+
+            background:
+                var(--dark-green);
+
+            color:
+                white;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .hero::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                500px;
+
+            height:
+                500px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--green);
+
+            opacity:
+                0.35;
+
+            top:
+                -250px;
+
+            right:
+                -150px;
+
+            animation:
+                floatCircle 8s ease-in-out infinite;
+
+        }
+
+
+        .hero::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--gold);
+
+            opacity:
+                0.12;
+
+            bottom:
+                -150px;
+
+            left:
+                -100px;
+
+        }
+
+
+        .hero-container {
+
+            max-width:
+                1200px;
+
+            min-height:
+                calc(100vh - 100px);
+
+            margin:
+                auto;
+
+            padding:
+                70px 25px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            align-items:
+                center;
+
+            gap:
+                60px;
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+        }
+
+
+        .hero-label {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                9px;
+
+            color:
+                var(--gold);
+
+            font-size:
+                0.72rem;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                20px;
+
+            animation:
+                fadeUp 0.8s ease forwards;
+
+        }
+
+
+        .hero-label span {
+
+            width:
+                8px;
+
+            height:
+                8px;
+
+            background:
+                var(--gold);
+
+            border-radius:
+                50%;
+
+            animation:
+                pulse 1.5s infinite;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(3.3rem, 6vw, 6.5rem);
+
+            line-height:
+                0.9;
+
+            letter-spacing:
+                -5px;
+
+            margin-bottom:
+                30px;
+
+            animation:
+                fadeUp 0.8s ease 0.1s forwards;
+
+            opacity:
+                0;
+
+        }
+
+
+        .hero h1 span {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .hero-text {
+
+            max-width:
+                580px;
+
+            color:
+                rgba(255,255,255,0.7);
+
+            font-size:
+                1.05rem;
+
+            margin-bottom:
+                30px;
+
+            animation:
+                fadeUp 0.8s ease 0.25s forwards;
+
+            opacity:
+                0;
+
+        }
+
+
+        .hero-buttons {
+
+            display:
+                flex;
+
+            gap:
+                15px;
+
+            flex-wrap:
+                wrap;
+
+            animation:
+                fadeUp 0.8s ease 0.4s forwards;
+
+            opacity:
+                0;
+
+        }
+
+
+        .btn {
+
+            padding:
+                15px 24px;
+
+            border-radius:
+                50px;
+
+            font-weight:
+                800;
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--gold);
+
+            color:
+                var(--dark-green);
+
+            box-shadow:
+                0 10px 35px
+                rgba(255,191,0,0.25);
+
+        }
+
+
+        .btn-primary:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 15px 45px
+                rgba(255,191,0,0.4);
+
+        }
+
+
+        .btn-outline {
+
+            border:
+                1px solid
+                rgba(255,255,255,0.25);
+
+            color:
+                white;
+
+        }
+
+
+        .btn-outline:hover {
+
+            background:
+                white;
+
+            color:
+                var(--dark-green);
+
+        }
+
+
+        /* =====================================================
+           WEBSITE MOCKUP
+        ====================================================== */
+
+        .website-preview {
+
+            position:
+                relative;
+
+            height:
+                510px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+        }
+
+
+        .browser {
+
+            width:
+                470px;
+
+            max-width:
+                90%;
+
+            background:
+                white;
+
+            border-radius:
+                18px;
+
+            overflow:
+                hidden;
+
+            box-shadow:
+                0 35px 90px
+                rgba(0,0,0,0.4);
+
+            transform:
+                perspective(1000px)
+                rotateY(-8deg)
+                rotateX(4deg);
+
+            animation:
+                browserFloat 5s ease-in-out infinite;
+
+        }
+
+
+        .browser-top {
+
+            height:
+                40px;
+
+            background:
+                #e8e8e8;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            padding:
+                0 15px;
+
+            gap:
+                7px;
+
+        }
+
+
+        .browser-dot {
+
+            width:
+                9px;
+
+            height:
+                9px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--dark-green);
+
+            opacity:
+                0.3;
+
+        }
+
+
+        .browser-address {
+
+            flex:
+                1;
+
+            height:
+                20px;
+
+            background:
+                white;
+
+            border-radius:
+                20px;
+
+            margin-left:
+                8px;
+
+        }
+
+
+        .website-screen {
+
+            height:
+                350px;
+
+            background:
+                var(--cream);
+
+            padding:
+                30px;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .website-nav {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            margin-bottom:
+                35px;
+
+        }
+
+
+        .website-logo {
+
+            width:
+                55px;
+
+            height:
+                20px;
+
+            background:
+                var(--dark-green);
+
+            border-radius:
+                5px;
+
+        }
+
+
+        .website-nav-lines {
+
+            display:
+                flex;
+
+            gap:
+                7px;
+
+        }
+
+
+        .website-nav-lines span {
+
+            width:
+                35px;
+
+            height:
+                6px;
+
+            background:
+                var(--green);
+
+            border-radius:
+                10px;
+
+        }
+
+
+        .website-heading {
+
+            width:
+                70%;
+
+            height:
+                28px;
+
+            background:
+                var(--dark-green);
+
+            border-radius:
+                8px;
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .website-heading.small {
+
+            width:
+                48%;
+
+            background:
+                var(--green);
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .website-button {
+
+            width:
+                100px;
+
+            height:
+                30px;
+
+            background:
+                var(--gold);
+
+            border-radius:
+                30px;
+
+            margin-bottom:
+                35px;
+
+        }
+
+
+        .website-cards {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                10px;
+
+        }
+
+
+        .website-card {
+
+            height:
+                100px;
+
+            background:
+                white;
+
+            border-radius:
+                10px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(40,63,36,0.08);
+
+        }
+
+
+        .floating-tag {
+
+            position:
+                absolute;
+
+            background:
+                var(--gold);
+
+            color:
+                var(--dark-green);
+
+            padding:
+                15px 20px;
+
+            border-radius:
+                14px;
+
+            font-weight:
+                900;
+
+            font-size:
+                0.75rem;
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,0.2);
+
+        }
+
+
+        .tag-one {
+
+            top:
+                65px;
+
+            right:
+                0;
+
+            animation:
+                smallFloat 4s ease-in-out infinite;
+
+        }
+
+
+        .tag-two {
+
+            bottom:
+                70px;
+
+            left:
+                0;
+
+            background:
+                var(--green);
+
+            color:
+                white;
+
+            animation:
+                smallFloat 4s ease-in-out 1s infinite;
+
+        }
+
+
+        /* =====================================================
+           SECTION COMMON
+        ====================================================== */
+
+        .section {
+
+            padding:
+                110px 25px;
+
+        }
+
+
+        .container {
+
+            max-width:
+                1200px;
+
+            margin:
+                auto;
+
+        }
+
+
+        .section-heading {
+
+            max-width:
+                700px;
+
+            margin-bottom:
+                55px;
+
+        }
+
+
+        .label {
+
+            color:
+                var(--green);
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                3px;
+
+            font-size:
+                0.7rem;
+
+            font-weight:
+                900;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .section-heading h2 {
+
+            font-size:
+                clamp(2.5rem,5vw,4.5rem);
+
+            line-height:
+                0.95;
+
+            letter-spacing:
+                -3px;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .section-heading p {
+
+            color:
+                var(--gray);
+
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ====================================================== */
+
+        .services {
+
+            background:
+                var(--light);
+
+        }
+
+
+        .service-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                18px;
+
+        }
+
+
+        .service {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                20px;
+
+            padding:
+                30px;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            transition:
+                0.4s;
+
+        }
+
+
+        .service:hover {
+
+            transform:
+                translateY(-10px);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .service::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                100px;
+
+            height:
+                100px;
+
+            background:
+                var(--cream);
+
+            border-radius:
+                50%;
+
+            top:
+                -50px;
+
+            right:
+                -50px;
+
+            transition:
+                0.4s;
+
+        }
+
+
+        .service:hover::before {
+
+            transform:
+                scale(1.8);
+
+        }
+
+
+        .service-icon {
+
+            width:
+                58px;
+
+            height:
+                58px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            background:
+                var(--gold);
+
+            border-radius:
+                15px;
+
+            font-size:
+                1.2rem;
+
+            font-weight:
+                900;
+
+            margin-bottom:
+                25px;
+
+            position:
+                relative;
+
+        }
+
+
+        .service h3 {
+
+            font-size:
+                1.2rem;
+
+            margin-bottom:
+                10px;
+
+            position:
+                relative;
+
+        }
+
+
+        .service p {
+
+            color:
+                var(--gray);
+
+            font-size:
+                0.87rem;
+
+            position:
+                relative;
+
+        }
+
+
+        /* =====================================================
+           WHY US
+        ====================================================== */
+
+        .why {
+
+            background:
+                var(--cream);
+
+        }
+
+
+        .why-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                70px;
+
+            align-items:
+                center;
+
+        }
+
+
+        .why-text h2 {
+
+            font-size:
+                clamp(2.5rem,5vw,4.5rem);
+
+            line-height:
+                0.95;
+
+            letter-spacing:
+                -3px;
+
+            margin-bottom:
+                25px;
+
+        }
+
+
+        .why-text h2 span {
+
+            color:
+                var(--green);
+
+        }
+
+
+        .why-text p {
+
+            color:
+                var(--gray);
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .benefits {
+
+            display:
+                grid;
+
+            gap:
+                15px;
+
+        }
+
+
+        .benefit {
+
+            display:
+                flex;
+
+            gap:
+                18px;
+
+            padding:
+                20px;
+
+            background:
+                rgba(255,255,255,0.55);
+
+            border-radius:
+                15px;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .benefit:hover {
+
+            transform:
+                translateX(8px);
+
+            background:
+                white;
+
+        }
+
+
+        .check {
+
+            width:
+                40px;
+
+            height:
+                40px;
+
+            flex-shrink:
+                0;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            background:
+                var(--green);
+
+            color:
+                white;
+
+            border-radius:
+                50%;
+
+            font-weight:
+                900;
+
+        }
+
+
+        .benefit h3 {
+
+            font-size:
+                0.95rem;
+
+            margin-bottom:
+                3px;
+
+        }
+
+
+        .benefit p {
+
+            font-size:
+                0.8rem;
+
+            color:
+                var(--gray);
+
+        }
+
+
+        /* =====================================================
+           PROCESS
+        ====================================================== */
+
+        .process {
+
+            background:
+                var(--dark-green);
+
+            color:
+                white;
+
+        }
+
+
+        .process .label {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .process .section-heading p {
+
+            color:
+                rgba(255,255,255,0.65);
+
+        }
+
+
+        .process-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap:
+                15px;
+
+        }
+
+
+        .step {
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            padding:
+                30px;
+
+            border-radius:
+                18px;
+
+            transition:
+                0.4s;
+
+        }
+
+
+        .step:hover {
+
+            background:
+                var(--green);
+
+            transform:
+                translateY(-8px);
+
+        }
+
+
+        .step-number {
+
+            font-size:
+                2.8rem;
+
+            color:
+                var(--gold);
+
+            font-weight:
+                900;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .step h3 {
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .step p {
+
+            color:
+                rgba(255,255,255,0.6);
+
+            font-size:
+                0.82rem;
+
+        }
+
+
+        /* =====================================================
+           PACKAGES
+        ====================================================== */
+
+        .packages {
+
+            background:
+                var(--light);
+
+        }
+
+
+        .package-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                20px;
+
+        }
+
+
+        .package {
+
+            background:
+                white;
+
+            padding:
+                35px;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid
+                var(--border);
+
+            transition:
+                0.4s;
+
+        }
+
+
+        .package:hover {
+
+            transform:
+                translateY(-10px);
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .package.featured {
+
+            background:
+                var(--dark-green);
+
+            color:
+                white;
+
+            transform:
+                translateY(-10px);
+
+        }
+
+
+        .package.featured:hover {
+
+            transform:
+                translateY(-18px);
+
+        }
+
+
+        .package-label {
+
+            font-size:
+                0.68rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                2px;
+
+            font-weight:
+                900;
+
+            color:
+                var(--green);
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .featured .package-label {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .package h3 {
+
+            font-size:
+                1.5rem;
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .package > p {
+
+            font-size:
+                0.83rem;
+
+            color:
+                var(--gray);
+
+            margin-bottom:
+                25px;
+
+        }
+
+
+        .featured > p {
+
+            color:
+                rgba(255,255,255,0.6);
+
+        }
+
+
+        .package ul {
+
+            list-style:
+                none;
+
+            margin-bottom:
+                30px;
+
+        }
+
+
+        .package li {
+
+            padding:
+                9px 0;
+
+            border-bottom:
+                1px solid
+                var(--border);
+
+            font-size:
+                0.8rem;
+
+        }
+
+
+        .featured li {
+
+            border-color:
+                rgba(255,255,255,0.1);
+
+        }
+
+
+        .package li::before {
+
+            content:
+                "✓";
+
+            color:
+                var(--green);
+
+            font-weight:
+                900;
+
+            margin-right:
+                10px;
+
+        }
+
+
+        .featured li::before {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        /* =====================================================
+           FAQ / AEO
+        ====================================================== */
+
+        .faq {
+
+            background:
+                var(--cream);
+
+        }
+
+
+        .faq-grid {
+
+            max-width:
+                900px;
+
+            margin:
+                auto;
+
+            display:
+                grid;
+
+            gap:
+                12px;
+
+        }
+
+
+        details {
+
+            background:
+                rgba(255,255,255,0.7);
+
+            border-radius:
+                14px;
+
+            padding:
+                20px 25px;
+
+            cursor:
+                pointer;
+
+        }
+
+
+        summary {
+
+            font-weight:
+                800;
+
+            font-size:
+                0.95rem;
+
+        }
+
+
+        details p {
+
+            margin-top:
+                15px;
+
+            color:
+                var(--gray);
+
+            font-size:
+                0.85rem;
+
+        }
+
+
+        /* =====================================================
+           CTA
+        ====================================================== */
+
+        .cta {
+
+            background:
+                var(--green);
+
+            color:
+                white;
+
+            text-align:
+                center;
+
+            padding:
+                110px 25px;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .cta h2 {
+
+            max-width:
+                900px;
+
+            margin:
+                auto auto 20px;
+
+            font-size:
+                clamp(2.8rem,6vw,6rem);
+
+            line-height:
+                0.9;
+
+            letter-spacing:
+                -4px;
+
+        }
+
+
+        .cta h2 span {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .cta p {
+
+            max-width:
+                650px;
+
+            margin:
+                0 auto 30px;
+
+            color:
+                rgba(255,255,255,0.7);
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            background:
+                var(--dark-green);
+
+            color:
+                white;
+
+            padding:
+                55px 25px 25px;
+
+        }
+
+
+        .footer-container {
+
+            max-width:
+                1200px;
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                40px;
+
+            flex-wrap:
+                wrap;
+
+        }
+
+
+        .footer-brand {
+
+            max-width:
+                400px;
+
+        }
+
+
+        .footer-brand h3 {
+
+            color:
+                var(--gold);
+
+            margin-bottom:
+                10px;
+
+        }
+
+
+        .footer-brand p {
+
+            color:
+                rgba(255,255,255,0.55);
+
+            font-size:
+                0.82rem;
+
+        }
+
+
+        .footer-links {
+
+            list-style:
+                none;
+
+            display:
+                flex;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+
+        }
+
+
+        .footer-links a {
+
+            color:
+                rgba(255,255,255,0.65);
+
+            font-size:
+                0.8rem;
+
+        }
+
+
+        .footer-links a:hover {
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .copyright {
+
+            max-width:
+                1200px;
+
+            margin:
+                40px auto 0;
+
+            padding-top:
+                20px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            color:
+                rgba(255,255,255,0.35);
+
+            font-size:
+                0.72rem;
+
+        }
+
+
+        /* =====================================================
+           ANIMATIONS
+        ====================================================== */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(35px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        @keyframes browserFloat {
+
+            0%,100% {
+
+                transform:
+                    perspective(1000px)
+                    rotateY(-8deg)
+                    rotateX(4deg)
+                    translateY(0);
+
+            }
+
+            50% {
+
+                transform:
+                    perspective(1000px)
+                    rotateY(-5deg)
+                    rotateX(2deg)
+                    translateY(-15px);
+
+            }
+
+        }
+
+
+        @keyframes smallFloat {
+
+            0%,100% {
+
+                transform:
+                    translateY(0);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-15px);
+
+            }
+
+        }
+
+
+        @keyframes floatCircle {
+
+            0%,100% {
+
+                transform:
+                    translate(0,0);
+
+            }
+
+            50% {
+
+                transform:
+                    translate(-30px,30px);
+
+            }
+
+        }
+
+
+        @keyframes pulse {
+
+            0%,100% {
+
+                transform:
+                    scale(1);
+
+                opacity:
+                    1;
+
+            }
+
+            50% {
+
+                transform:
+                    scale(1.6);
+
+                opacity:
+                    0.5;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           TABLET
+        ====================================================== */
+
+        @media (max-width: 950px) {
+
+            .hero-container {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .website-preview {
+
+                min-height:
+                    450px;
+
+            }
+
+
+            .service-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+
+            .why-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .process-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+            }
+
+
+            .package-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .package.featured {
+
+                transform:
+                    none;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 650px) {
+
+            .nav-links {
+
+                display:
+                    none;
+
+            }
+
+
+            .hero-container {
+
+                padding:
+                    60px 20px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    3.4rem;
+
+                letter-spacing:
+                    -4px;
+
+            }
+
+
+            .browser {
+
+                width:
+                    360px;
+
+            }
+
+
+            .website-screen {
+
+                height:
+                    280px;
+
+            }
+
+
+            .website-card {
+
+                height:
+                    70px;
+
+            }
+
+
+            .website-preview {
+
+                height:
+                    400px;
+
+            }
+
+
+            .tag-one {
+
+                right:
+                    -5px;
+
+            }
+
+
+            .tag-two {
+
+                left:
+                    -5px;
+
+            }
+
+
+            .section {
+
+                padding:
+                    80px 20px;
+
+            }
+
+
+            .service-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .process-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .footer-container {
+
+                flex-direction:
+                    column;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           REDUCED MOTION
+        ====================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                scroll-behavior:
+                    auto !important;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <nav class="nav-container">
+
+            <a href="index.html"
+               class="logo">
+
+                <span class="logo-symbol">
+                    <img src="images/mutacore final.png" alt="logo" width="40px" height="40px">
+                </span>
+
+                <span>
+                    Mutacore Visuals
+                </span>
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="socialmedia.html">
+                        Social Media
+                    </a>
+                </li>
+
+                <li>
+                    <a href="webdesign.html">
+                        Web Design
+                    </a>
+                </li>
+
+                <li>
+                    <a href="webmaintenance.html">
+                        Maintenance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contactus.html"
+                       class="nav-contact">
+                        Let's Talk
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+
+                <div>
+
+
+                    <div class="hero-label">
+
+                        <span></span>
+
+                        Web Design & Development
+
+                    </div>
+
+
+                    <h1>
+
+                        Websites that
+                        <span>
+                            work
+                        </span>
+                        for you.
+
+                    </h1>
+
+
+                    <p class="hero-text">
+
+                        We design modern, responsive and engaging
+                        websites that help businesses build trust,
+                        attract customers and create a powerful
+                        digital presence.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="contactus.html"
+                           class="btn btn-primary">
+
+                            Build My Website →
+
+                        </a>
+
+
+                        <a href="#services"
+                           class="btn btn-outline">
+
+                            Explore Services
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =========================================
+                     WEBSITE MOCKUP
+                ========================================== -->
+
+                <div class="website-preview">
+
+
+                    <div class="floating-tag tag-one">
+
+                        ⚡ FAST & RESPONSIVE
+
+                    </div>
+
+
+                    <div class="browser">
+
+
+                        <div class="browser-top">
+
+                            <span class="browser-dot"></span>
+
+                            <span class="browser-dot"></span>
+
+                            <span class="browser-dot"></span>
+
+                            <div class="browser-address"></div>
+
+                        </div>
+
+
+                        <div class="website-screen">
+
+
+                            <div class="website-nav">
+
+                                <div class="website-logo"></div>
+
+                                <div class="website-nav-lines">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="website-heading"></div>
+
+                            <div class="website-heading small"></div>
+
+                            <div class="website-button"></div>
+
+
+                            <div class="website-cards">
+
+                                <div class="website-card"></div>
+
+                                <div class="website-card"></div>
+
+                                <div class="website-card"></div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-tag tag-two">
+
+                         CLEAN CODE
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+        <section class="section services"
+                 id="services">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="label">
+                        What We Build
+                    </p>
+
+                    <h2>
+                        Digital experiences designed to perform.
+                    </h2>
+
+                    <p>
+                        Whether you're launching a new business,
+                        refreshing an existing brand or building
+                        your online portfolio, we create websites
+                        around your goals.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            
+                        </div>
+
+                        <h3>
+                            Business Websites
+                        </h3>
+
+                        <p>
+                            Professional websites that introduce
+                            your business, showcase your services
+                            and make it easy for customers to
+                            contact you.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Portfolio Websites
+                        </h3>
+
+                        <p>
+                            Beautiful portfolio websites for
+                            designers, photographers, creatives,
+                            freelancers and professionals.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Landing Pages
+                        </h3>
+
+                        <p>
+                            Focused landing pages designed to
+                            promote a product, service, campaign
+                            or specific business goal.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            M
+                        </div>
+
+                        <h3>
+                            Brand Websites
+                        </h3>
+
+                        <p>
+                            Websites built around your brand identity,
+                            colors, typography and visual personality.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            Websites designed to look and work
+                            beautifully across phones, tablets
+                            and desktop computers.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-icon">
+                            ⚙
+                        </div>
+
+                        <h3>
+                            Website Maintenance
+                        </h3>
+
+                        <p>
+                            Ongoing updates, improvements and
+                            technical support to keep your website
+                            useful and up to date.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WHY MUTACORE
+        ================================================== -->
+
+        <section class="section why">
+
+            <div class="container why-grid">
+
+
+                <div class="why-text">
+
+                    <p class="label">
+                        Why Choose Us
+                    </p>
+
+
+                    <h2>
+
+                        Your website should do
+                        <span>
+                            more than look good.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        A good website is an important part of
+                        your business. It should communicate your
+                        value, build credibility and make it easy
+                        for visitors to take action.
+
+                    </p>
+
+
+                    <a href="contactus.html"
+                       class="btn btn-primary">
+
+                        Discuss Your Website →
+
+                    </a>
+
+                </div>
+
+
+                <div class="benefits">
+
+
+                    <div class="benefit">
+
+                        <div class="check">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Mobile Friendly
+                            </h3>
+
+                            <p>
+                                Your website adapts to different
+                                screen sizes and devices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="check">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                SEO Friendly
+                            </h3>
+
+                            <p>
+                                We structure pages with search
+                                engines and users in mind.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="check">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                User Focused
+                            </h3>
+
+                            <p>
+                                Clear navigation and layouts make
+                                websites easier to use.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="check">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Modern Design
+                            </h3>
+
+                            <p>
+                                We combine creativity with clean
+                                and contemporary web design.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROCESS
+        ================================================== -->
+
+        <section class="section process">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="label">
+                        Our Process
+                    </p>
+
+                    <h2>
+                        From idea to launch.
+                    </h2>
+
+                    <p>
+                        We keep the website development process
+                        simple, collaborative and focused.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+
+                    <article class="step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Discovery
+                        </h3>
+
+                        <p>
+                            We learn about your business, audience,
+                            goals and website requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+                            We create the visual direction,
+                            layout and user experience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Development
+                        </h3>
+
+                        <p>
+                            We turn the design into a responsive,
+                            functional website.
+                        </p>
+
+                    </article>
+
+
+                    <article class="step">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Launch
+                        </h3>
+
+                        <p>
+                            After testing and final adjustments,
+                            your website is ready to go live.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PACKAGES
+        ================================================== -->
+
+        <section class="section packages">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="label">
+                        Website Solutions
+                    </p>
+
+                    <h2>
+                        Choose the right starting point.
+                    </h2>
+
+                    <p>
+                        Every project is different, so these packages
+                        can be customized according to your needs.
+                    </p>
+
+                </div>
+
+
+                <div class="package-grid">
+
+
+                    <article class="package">
+
+                        <p class="package-label">
+                            Starter
+                        </p>
+
+                        <h3>
+                            Essential Website
+                        </h3>
+
+                        <p>
+                            A simple professional online presence
+                            for individuals and small businesses.
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Responsive design
+                            </li>
+
+                            <li>
+                                Home page
+                            </li>
+
+                            <li>
+                                About page
+                            </li>
+
+                            <li>
+                                Services page
+                            </li>
+
+                            <li>
+                                Contact page
+                            </li>
+
+                            <li>
+                                Basic SEO structure
+                            </li>
+
+                        </ul>
+
+
+                        <a href="contactus.html"
+                           class="btn btn-primary">
+
+                            Get Started
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="package featured">
+
+                        <p class="package-label">
+                            Popular
+                        </p>
+
+                        <h3>
+                            Business Website
+                        </h3>
+
+                        <p>
+                            A complete website designed to help
+                            your business establish a stronger
+                            digital presence.
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Custom website design
+                            </li>
+
+                            <li>
+                                Multiple pages
+                            </li>
+
+                            <li>
+                                Responsive layout
+                            </li>
+
+                            <li>
+                                SEO-friendly structure
+                            </li>
+
+                            <li>
+                                Contact forms
+                            </li>
+
+                            <li>
+                                Social media integration
+                            </li>
+
+                        </ul>
+
+
+                        <a href="contactus.html"
+                           class="btn btn-primary">
+
+                            Start Project
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="package">
+
+                        <p class="package-label">
+                            Advanced
+                        </p>
+
+                        <h3>
+                            Custom Experience
+                        </h3>
+
+                        <p>
+                            A highly customized website for brands
+                            that need a more advanced digital
+                            experience.
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Fully custom design
+                            </li>
+
+                            <li>
+                                Advanced page layouts
+                            </li>
+
+                            <li>
+                                Interactive elements
+                            </li>
+
+                            <li>
+                                Advanced SEO structure
+                            </li>
+
+                            <li>
+                                Custom functionality
+                            </li>
+
+                            <li>
+                                Maintenance options
+                            </li>
+
+                        </ul>
+
+
+                        <a href="contactus.html"
+                           class="btn btn-primary">
+
+                            Talk To Us
+
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FAQ — AEO
+        ================================================== -->
+
+        <section class="section faq">
+
+            <div class="container">
+
+
+                <div class="section-heading"
+                     style="margin-left:auto;margin-right:auto;text-align:center;">
+
+                    <p class="label">
+                        Frequently Asked Questions
+                    </p>
+
+                    <h2>
+                        Web design questions, answered.
+                    </h2>
+
+                    <p>
+                        Here are answers to some common questions
+                        about our website design services.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-grid">
+
+
+                    <details>
+
+                        <summary>
+                            What type of websites does Mutacore Visuals create?
+                        </summary>
+
+                        <p>
+                            Mutacore Visuals creates business websites,
+                            portfolio websites, landing pages, brand
+                            websites and other customized digital
+                            experiences.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Are your websites mobile friendly?
+                        </summary>
+
+                        <p>
+                            Yes. Our websites are designed to respond
+                            to different screen sizes, including
+                            smartphones, tablets and desktop computers.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Do you provide website maintenance?
+                        </summary>
+
+                        <p>
+                            Yes. Mutacore Visuals provides website
+                            maintenance services including content
+                            updates, design improvements and ongoing
+                            website support.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can you design a website around my existing brand?
+                        </summary>
+
+                        <p>
+                            Yes. We can use your existing logo, colors,
+                            typography and brand identity to create
+                            a consistent website experience.
+
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can you build a website for a small business?
+                        </summary>
+
+                        <p>
+                            Yes. We create websites for businesses
+                            of different sizes and can tailor the
+                            website structure and features to your
+                            specific goals.
+
+                        </p>
+
+                    </details>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <p class="label"
+                   style="color:var(--gold);">
+
+                    Ready To Go Online?
+
+                </p>
+
+
+                <h2>
+
+                    Let's build a website
+                    <span>
+                        worth visiting.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Your next customer could be searching for you
+                    right now. Give them a website that makes the
+                    right first impression.
+
+                </p>
+
+
+                <a href="contactus.html"
+                   class="btn btn-primary">
+
+                    Start Your Website →
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    Mutacore Visuals
+                </h3>
+
+                <p>
+
+                    Creative design, branding, web development,
+                    social media design and website maintenance
+                    for businesses ready to stand out.
+
+                </p>
+
+            </div>
+
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="aboutus.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="socialmedia.html">
+                        Social Media
+                    </a>
+                </li>
+
+                <li>
+                    <a href="webdesign.html">
+                        Web Design
+                    </a>
+                </li>
+
+                <li>
+                    <a href="webmaintenance.html">
+                        Maintenance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contactus.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Mutacore Visuals.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
